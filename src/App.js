@@ -1,11 +1,7 @@
-
 import MainLayout from 'components/MainLayout';
+import HomePage from 'containers/home/Index';
 function App() {
-	return (
-		<div className="bg-background-50 text-white-500">
-			<MainLayout />
-		</div>
-	);
+	return <HomePage />;
 }
 
 export default App;

@@ -42,6 +42,7 @@ module.exports = {
 					200: '#909096',
 					300: '#282828',
 					400: '#181818',
+					500: '#8d8d8d',
 					900: '#000',
 				},
 				background: {
@@ -59,6 +60,15 @@ module.exports = {
 			boxShadow: {
 				rainbow:
 					'0 0 0 10px #ff0000,0 0 0 20px #ff7700,0 0 0 30px #FFDD00,0 0 0 40px #00FF00,0 0 0 50px #0000FF,0 0 0 60px #C77DF3,0 0 0 70px #8A2BE2',
+			},
+			keyframes: {
+				scroll: {
+					'0%': { transform: 'translateX(-10px)' },
+					'100%': { transform: 'translateX(4px)' },
+				},
+			},
+			animation: {
+				scroll: 'scroll 0.5s linear infinite alternate-reverse',
 			},
 		},
 	},

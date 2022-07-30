@@ -8,8 +8,8 @@ const MainLayout = ({ children }) => {
 	return (
 		<div>
 			<Header toggleTab={toggleTab} setToggleTab={setToggleTab} />
-			<Sidebar toggleTab={toggleTab} setToggleTab={setToggleTab}/>
-			{children}
+			<Sidebar toggleTab={toggleTab} setToggleTab={setToggleTab} />
+			<div className="m-0 xl:ml-[120px]">{children}</div>
 		</div>
 	);
 };

@@ -6,7 +6,7 @@ const Sidebar = ({ toggleTab, setToggleTab }) => {
 		<aside
 			className={`w-full h-0 fixed top-0 left-0 ${
 				!toggleTab ? 'overflow-hidden' : ''
-			} xl:overflow-visible xl:w-[8%]`}
+			} xl:overflow-visible xl:w-[120px]`}
 			style={{ zIndex: 1 }}
 		>
 			<div className="h-[100vh] flex justify-between items-center flex-col bg-gray-400">

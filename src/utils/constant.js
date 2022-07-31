@@ -2,6 +2,11 @@ import { FaLinkedinIn, FaGithub, FaFacebook } from 'react-icons/fa';
 
 export const menuNavbar = [
 	{
+		id: 0,
+		title: 'Home',
+		url: '#',
+	},
+	{
 		id: 1,
 		title: 'About',
 		url: '#',

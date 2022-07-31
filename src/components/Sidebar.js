@@ -11,7 +11,7 @@ const Sidebar = ({ toggleTab, setToggleTab }) => {
 		>
 			<div className="h-[100vh] flex justify-between items-center flex-col bg-gray-400">
 				<div className="min-h-[30vh] w-full flex justify-center items-center flex-col bg-gray-900 xl:min-h-[26vh]">
-					<a href="#" className="flex justify-center items-center flex-col">
+					<a href="/" className="flex justify-center items-center flex-col">
 						<Logo />
 						<p className="text-2xl font-bold mt-1">Toan</p>
 					</a>

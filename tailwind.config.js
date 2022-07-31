@@ -7,6 +7,9 @@ module.exports = {
 	},
 	content: ['./pages/**/*.{js,ts,jsx,tsx}', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
+		fontFamily: {
+			aurore: ["'La Belle Aurore', cursive"],
+		},
 		fontSize: {
 			'2sl': '8px',
 			'1sl': '10px',
@@ -43,6 +46,7 @@ module.exports = {
 					300: '#282828',
 					400: '#181818',
 					500: '#8d8d8d',
+					600: '#ffffff0a',
 					900: '#000',
 				},
 				background: {

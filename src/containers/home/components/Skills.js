@@ -1,44 +1,8 @@
-import React, { useEffect } from 'react';
-import { tags } from 'utils/constant';
-import { motion } from 'framer-motion';
-import { SM, MD, LG, XL, XXL } from 'utils/constant';
-import useWindowSize from 'utils/useWindowSize';
 import Dropdown from 'components/Dropdown';
-
-const spanVariants = {
-	visible: { y: 0, scaleY: 1 },
-	hover: {
-		y: [-1, -2, -2.8, 2, 1.2, 0],
-		scaleY: [1, 1.3, 0.8, 1, 1.2, 1],
-	},
-};
-
-const listWord = {
-	visible: {
-		opacity: 1,
-		transition: {
-			when: 'beforeChildren',
-			staggerChildren: 0.2,
-		},
-	},
-	hidden: {
-		opacity: 0,
-		transition: {
-			when: 'afterChildren',
-		},
-	},
-};
-
-const word = {
-	visible: {
-		opacity: 1,
-		y: [-1, -1.9, -2.7, 1],
-		scaleY: [1, 1.3, 0.8, 1],
-	},
-	hidden: {
-		opacity: 0,
-	},
-};
+import { motion } from 'framer-motion';
+import { useEffect } from 'react';
+import { listWordAffect, SM, spanVariants, tags, wordAffect, XXL } from 'utils/constant';
+import useWindowSize from 'utils/useWindowSize';
 
 const h1Word = 'About myself';
 
@@ -47,7 +11,6 @@ const Skills = () => {
 
 	useEffect(() => {
 		var canvas = document.getElementById('myCanvas');
-		console.log(width);
 		if (width < SM) {
 			canvas.height = 350;
 			canvas.width = 350;
@@ -67,9 +30,9 @@ const Skills = () => {
 					<div className="px-4 sm:px-8 xl:pl-12">
 						<p className="font-aurore tracking-[3px] text-gray-100 text-1xl relative left-[-18px]">{`<h2>`}</p>
 						<motion.h1 className="text-[55px] text-primary-100 font-bold tracking-[-1px] leading-[68px] lg:text-[64px] xl:text-[74px] break-words">
-							<motion.div variants={listWord} initial="hidden" animate="visible" className="flex">
+							<motion.div variants={listWordAffect} initial="hidden" animate="visible" className="flex">
 								{h1Word.split('').map((x, idx) => (
-									<motion.span variants={word} key={idx}>
+									<motion.span variants={wordAffect} key={idx}>
 										<motion.p
 											variants={spanVariants}
 											initial="visible"
@@ -101,6 +64,12 @@ const Skills = () => {
 						<p>I currently work remotely with a selected freelance client base being open for new opportunities.</p>
 						<p className="font-aurore tracking-[3px] text-gray-100 text-1xl relative left-[-18px]">{`<p>`}</p>
 					</div>
+					<div
+						style={{ zIndex: -999 }}
+						className="leading-0 xl:text-[28rem] lg:text-[24rem] sm:text-[18rem] text-[12rem] tracking-[-10px] text-gray-600 font-bold absolute left-0 xl:top-[10px] lg:top-[30px] sm:top-[180px] top-[396px] "
+					>
+						Skills
+					</div>
 				</div>
 				<div className="w-full mt-10 lg:mt-0 lg:w-[50%]">
 					<div id="myCanvasContainer">
@@ -112,7 +81,7 @@ const Skills = () => {
 						<ul>
 							{tags.map((x) => (
 								<li key={x}>
-									<a href="#" target="_blank">
+									<a className='pointer-events-none cursor-default' onClick={(e) => e.preventDefault()}>
 										{x}
 									</a>
 								</li>

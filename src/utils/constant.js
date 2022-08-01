@@ -77,3 +77,39 @@ export const tags = [
 	'ES6',
 	'Redux',
 ];
+
+
+export const spanVariants = {
+	visible: { y: 0, scaleY: 1 },
+	hover: {
+		y: [-1, -2, -2.8, 2, 1.2, 0],
+		scaleY: [1, 1.3, 0.8, 1, 1.2, 1],
+	},
+};
+
+export const listWordAffect = {
+	visible: {
+		opacity: 1,
+		transition: {
+			when: 'beforeChildren',
+			staggerChildren: 0.2,
+		},
+	},
+	hidden: {
+		opacity: 0,
+		transition: {
+			when: 'afterChildren',
+		},
+	},
+};
+
+export const wordAffect = {
+	visible: {
+		opacity: 1,
+		y: [-1, -1.9, -2.7, 1],
+		scaleY: [1, 1.3, 0.8, 1],
+	},
+	hidden: {
+		opacity: 0,
+	},
+};

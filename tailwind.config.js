@@ -24,7 +24,7 @@ module.exports = {
 		},
 
 		boxShadow: {
-			button: '3px 5px 8px #00000017',
+			input: '0 0 0px 1000px #2b2b2b inset',
 			box: 'rgba(253, 16, 86, 0.4) -5px 5px, rgba(253, 16, 86, 0.3) -10px 10px, rgba(253, 16, 86, 0.2) -15px 15px',
 		},
 		extend: {

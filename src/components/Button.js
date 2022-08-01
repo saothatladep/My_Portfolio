@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Button = ({ text }) => {
+const Button = ({ text, submit = false }) => {
 	return (
-		<a
-			href="/"
+		<button
+			type={`${submit ? 'submit' : ''}`}
 			className="no-underline w-full max-w-[200px] text-primary-100 text-center h-[50px] block leading-[50px] tracking-[3px] relative group"
 		>
 			<div className="relative w-full h-full overflow-hidden transition-all duration-300 ease-in-out">
@@ -11,7 +11,7 @@ const Button = ({ text }) => {
 				<span className="w-full h-full absolute left-0 border-[1px] border-primary-100 box-border"></span>
 				<span className="absolute w-full h-full top-0 left-0 group-hover:text-background-50">{text}</span>
 			</div>
-		</a>
+		</button>
 	);
 };
 

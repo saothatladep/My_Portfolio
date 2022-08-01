@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Button from 'components/Button';
 import { motion } from 'framer-motion';
 import HoverImage from 'assets/images/circle.png';
@@ -39,6 +39,10 @@ const word = {
 	},
 };
 
+const h1Word = 'My Portfolio';
+
+const fakeData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
 const Work = () => {
 	return (
 		<>
@@ -47,61 +51,18 @@ const Work = () => {
 					<p className="font-aurore tracking-[3px] text-gray-100 text-1xl relative left-[-18px]">{`<h2>`}</p>
 					<motion.h1 className="text-[55px] text-primary-100 font-bold tracking-[-1px] leading-[68px] lg:text-[64px] xl:text-[74px] ">
 						<motion.div variants={listWord} initial="hidden" animate="visible" className="flex">
-							<motion.span variants={word}>
-								<motion.p variants={spanVariants} initial="visible" whileHover="hover">
-									M
-								</motion.p>
-							</motion.span>
-							<motion.span variants={word}>
-								<motion.p variants={spanVariants} initial="visible" whileHover="hover" className="mr-2 lg:mr-4">
-									y
-								</motion.p>
-							</motion.span>
-							<motion.span variants={word}>
-								<motion.p variants={spanVariants} initial="visible" whileHover="hover">
-									P
-								</motion.p>
-							</motion.span>
-							<motion.span variants={word}>
-								<motion.p variants={spanVariants} initial="visible" whileHover="hover">
-									o
-								</motion.p>
-							</motion.span>
-							<motion.span variants={word}>
-								<motion.p variants={spanVariants} initial="visible" whileHover="hover">
-									r
-								</motion.p>
-							</motion.span>
-							<motion.span variants={word}>
-								<motion.p variants={spanVariants} initial="visible" whileHover="hover">
-									t
-								</motion.p>
-							</motion.span>
-							<motion.span variants={word}>
-								<motion.p variants={spanVariants} initial="visible" whileHover="hover">
-									f
-								</motion.p>
-							</motion.span>
-							<motion.span variants={word}>
-								<motion.p variants={spanVariants} initial="visible" whileHover="hover">
-									o
-								</motion.p>
-							</motion.span>
-							<motion.span variants={word}>
-								<motion.p variants={spanVariants} initial="visible" whileHover="hover">
-									l
-								</motion.p>
-							</motion.span>
-							<motion.span variants={word}>
-								<motion.p variants={spanVariants} initial="visible" whileHover="hover">
-									i
-								</motion.p>
-							</motion.span>
-							<motion.span variants={word}>
-								<motion.p variants={spanVariants} initial="visible" whileHover="hover">
-									o
-								</motion.p>
-							</motion.span>
+							{h1Word.split('').map((x, idx) => (
+								<motion.span variants={word} key={idx}>
+									<motion.p
+										variants={spanVariants}
+										initial="visible"
+										whileHover="hover"
+										className={`${x === ' ' ? 'mr-2 lg:mr-4' : ''}`}
+									>
+										{x}
+									</motion.p>
+								</motion.span>
+							))}
 						</motion.div>
 					</motion.h1>
 					<p className="font-aurore tracking-[3px] text-gray-100 text-1xl relative left-[-18px]">{`<h2>`}</p>
@@ -134,30 +95,31 @@ const Work = () => {
 			</section>
 			<p className="font-aurore tracking-[3px] w-[100px] text-gray-100 text-1xl relative left-3 sm:left-8 overflow-hidden">{`<section>`}</p>
 
-			<div className="bg-gray-900/10 my-4">
-				<ul className="flex flex-wrap list-work">
-					{[...Array(10)]
-						.map((x, idx) => 0)
-						.map((x, idx) => (
-							<li
-								className="w-[33.3%] h-[10rem] sm:w-[25%] sm:h-[12rem] lg:w-[20%] lg:h-[14rem] xl:h-[18rem] overflow-hidden relative list-item cursor-pointer group"
-								key={idx}
-							>
-								<div className="absolute top-0 left-0 bottom-0 right-0 group-hover:scale-[1.14] item">
-									<img className="w-full h-full object-cover" src={Image1} alt="thumbnail" />
-									<div></div>
-									<img
-										alt="img"
-										src={HoverImage}
-										className={`block absolute top-0 left-0 w-full h-full opacity-0 transition-all duration-150 ease-out scale-[0.2] group-hover:scale-[0.3] group-hover:opacity-100`}
-									></img>
+			<div className="my-4 mx-auto w-[94%]">
+				<div className='flex justify-between items-center flex-col sm:flex-wrap sm:flex-row'>
+					{fakeData.map((x) => (
+						<article className="border-t-[2px] border-primary-100 w-full h-[220px] bg-background-50 p-6 text-gray-200 shadow-box mb-8 sm:w-[48%] xl:w-[32%] sm:h-[250px] xl:h-[280px]">
+							<div className="">
+								<p className='text-base uppercase text-primary-100 tracking-[3px]'>Web Developer</p>
+								<div>
+									<h5>
+										<a className='text-[26px] text-white-500 block my-4 mx-0 hover:text-primary-100' href="/">E-commerce website</a>
+									</h5>
 								</div>
-							</li>
-						))}
-				</ul>
+								<div className='text-ellipsis line-clamp-3'>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+									industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+									scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+									into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+									release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+									software like Aldus PageMaker including versions of Lorem Ipsum.
+								</div>
+							</div>
+						</article>
+					))}
+				</div>
 			</div>
-            <p className="font-aurore tracking-[3px] w-[100px] text-gray-100 text-1xl relative left-3 sm:left-8 overflow-hidden">{`</section>`}</p>
-
+			<p className="font-aurore tracking-[3px] w-[100px] text-gray-100 text-1xl relative left-3 sm:left-8 overflow-hidden">{`</section>`}</p>
 		</>
 	);
 };

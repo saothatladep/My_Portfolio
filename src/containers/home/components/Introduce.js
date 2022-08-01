@@ -1,7 +1,7 @@
 import Logo from 'assets/images/logo.png';
 import Button from 'components/Button';
+import Dropdown from 'components/Dropdown';
 import { motion } from 'framer-motion';
-import { CgChevronDoubleDown } from 'react-icons/cg';
 
 const spanVariants = {
 	visible: { y: 0, scaleY: 1 },
@@ -107,9 +107,9 @@ const item = {
 
 const Introduce = () => {
 	return (
-		<section className="min-h-[100vh] flex items-center p-4 xl:px-6">
+		<section className="min-h-[100vh] flex items-center p-4 xl:px-6 relative">
 			<div>
-				<div className="px-4 sm:px-8 xl:pl-12">
+				<div className="px-3 sm:px-8 xl:pl-12">
 					<p className="font-aurore tracking-[3px] text-gray-100 text-1xl relative left-[-18px]">{`<h1>`}</p>
 					<motion.h1
 						aria-label=" Hi,  I’m  oan,  web developer"
@@ -238,7 +238,7 @@ const Introduce = () => {
 									r
 								</motion.p>
 							</motion.span>
-						<span className="font-aurore tracking-[3px] text-gray-100 text-1xl ml-6 relative top-5 sm:top-7 lg:top-9">{`<h1/>`}</span>
+							<span className="font-aurore tracking-[3px] text-gray-100 text-1xl ml-1 sm:ml-6 relative top-5 sm:top-7 lg:top-9">{`<h1/>`}</span>
 						</motion.div>
 					</motion.h1>
 					<motion.div variants={containerUp} initial="hidden" animate="visible" className="mt-0">
@@ -256,19 +256,8 @@ const Introduce = () => {
 						</motion.div>
 					</motion.div>
 				</div>
-				<div className="absolute right-[-24px] bottom-[52px] flex items-center justify-center gap-x-1 rotate-90 text-sl">
-					<span className="animate-scroll">Scroll down</span>
-					<span className="text-1xl rotate-[-90deg]">
-						<CgChevronDoubleDown />
-					</span>
-				</div>
-				<div className="absolute left-[-24px] xl:left-[90px] bottom-[52px] flex items-center justify-center gap-x-1 rotate-90 text-sl">
-					<span className="animate-scroll">Scroll down</span>
-					<span className="text-1xl rotate-[-90deg]">
-						<CgChevronDoubleDown />
-					</span>
-				</div>
 			</div>
+			<Dropdown />
 		</section>
 	);
 };

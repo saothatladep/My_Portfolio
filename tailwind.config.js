@@ -25,7 +25,7 @@ module.exports = {
 
 		boxShadow: {
 			button: '3px 5px 8px #00000017',
-			primary: '3px 5px 8px #00000017',
+			box: 'rgba(253, 16, 86, 0.4) -5px 5px, rgba(253, 16, 86, 0.3) -10px 10px, rgba(253, 16, 86, 0.2) -15px 15px',
 		},
 		extend: {
 			colors: {
@@ -79,5 +79,5 @@ module.exports = {
 	variants: {
 		extend: {},
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/line-clamp')],
 };

@@ -2,7 +2,7 @@
 	"name": "my-portfolio",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://tonton.github.io/my-portfolio/",
+	"homepage": "https://saothatladep.github.io/My-Portfolio/",
 	"dependencies": {
 		"@emailjs/browser": "^3.6.2",
 		"@tailwindcss/line-clamp": "^0.4.0",

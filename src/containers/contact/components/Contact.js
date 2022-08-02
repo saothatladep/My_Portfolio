@@ -71,7 +71,7 @@ const Contact = () => {
 	}, [errorText]);
 
 	return (
-		<section className="py-20 px-6 relative">
+		<section className="min-h-[100vh] py-20 px-6 relative">
 			<div className="flex justify-between items-center flex-col lg:flex-row">
 				<div className="w-full lg:w-[50%]">
 					<div className="px-4 sm:px-8 xl:pl-12">

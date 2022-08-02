@@ -17,7 +17,7 @@ const listWord1 = {
 		opacity: 1,
 		transition: {
 			when: 'beforeChildren',
-			staggerChildren: 0.2,
+			staggerChildren: 0.15,
 		},
 	},
 	hidden: {
@@ -33,7 +33,7 @@ const listWord2 = {
 		opacity: 1,
 		transition: {
 			when: 'beforeChildren',
-			staggerChildren: 0.2,
+			staggerChildren: 0.15,
 			delayChildren: 0.6,
 		},
 	},
@@ -50,7 +50,7 @@ const listWord3 = {
 		opacity: 1,
 		transition: {
 			when: 'beforeChildren',
-			staggerChildren: 0.2,
+			staggerChildren: 0.15,
 			delayChildren: 2,
 		},
 	},
@@ -252,7 +252,7 @@ const Introduce = () => {
 					<br />
 					<motion.div variants={containerDown} initial="hidden" animate="visible" className="mt-0">
 						<motion.div variants={item}>
-							<Button text="Contact me!" />
+							<Button text="Contact me!" url="/contact" />
 						</motion.div>
 					</motion.div>
 				</div>

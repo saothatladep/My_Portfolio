@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Logo from 'assets/icon/logo';
 import { menuNavbar, socialIcon } from 'utils/constant';
+import { useLocation } from 'react-router-dom';
+
+
 const Sidebar = ({ toggleTab, setToggleTab }) => {
+	const location = useLocation().pathname;
+
 	return (
 		<aside
 			className={`w-full h-0 fixed top-0 left-0 ${
@@ -23,7 +28,9 @@ const Sidebar = ({ toggleTab, setToggleTab }) => {
 						<div key={x.id}>
 							<a
 								href={x.url}
-								className={`text-gray-100 hover:text-primary-100 block text-center leading-[48px] before:content-[''] before:w-full before:h-[1px] before:absolute before:right-0 before:bg-gray-300 ${
+								className={`${
+									location === x.url ? 'text-primary-100' : 'text-gray-100'
+								} hover:text-primary-100 block text-center leading-[48px] before:content-[''] before:w-full before:h-[1px] before:absolute before:right-0 before:bg-gray-300 ${
 									menuNavbar.length - 1 === idx
 										? `after:content-[''] after:w-full after:h-[1px] after:absolute after:right-0 after:mt-[52px] after:bg-gray-300`
 										: ''

@@ -10,32 +10,27 @@ export const menuNavbar = [
 	{
 		id: 0,
 		title: 'Home',
-		url: '#',
+		url: '/',
 	},
 	{
 		id: 1,
 		title: 'About',
-		url: '#',
+		url: '/about',
 	},
 	{
 		id: 2,
 		title: 'My Skills',
-		url: '#',
+		url: '/skills',
 	},
 	{
 		id: 3,
 		title: 'Work',
-		url: '#',
+		url: '/work',
 	},
 	{
 		id: 4,
 		title: 'Contact',
-		url: '#',
-	},
-	{
-		id: 5,
-		title: 'Blog',
-		url: '#',
+		url: '/contact',
 	},
 ];
 
@@ -77,7 +72,6 @@ export const tags = [
 	'ES6',
 	'Redux',
 ];
-
 
 export const spanVariants = {
 	visible: { y: 0, scaleY: 1 },

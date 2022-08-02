@@ -6,6 +6,34 @@ const h1Word = 'My Portfolio';
 
 const fakeData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
+const workContainer = {
+	visible: {
+		opacity: 1,
+		transition: {
+			when: 'beforeChildren',
+			staggerChildren: 0.1,
+		},
+	},
+	hidden: {
+		opacity: 0,
+		transition: {
+			when: 'afterChildren',
+		},
+	},
+};
+
+const work = {
+	visible: {
+		opacity: 1,
+		y: 0,
+		scaleY: [1, 1.3, 0.8, 1],
+	},
+	hidden: {
+		opacity: 0,
+		y: 100,
+	},
+};
+
 const Work = () => {
 	return (
 		<>
@@ -59,17 +87,28 @@ const Work = () => {
 			<p className="font-aurore tracking-[3px] w-[100px] text-gray-100 text-1xl relative left-3 sm:left-8 overflow-hidden">{`<section>`}</p>
 
 			<div className="my-4 mx-auto w-[94%]">
-				<div className='flex justify-between items-center flex-col sm:flex-wrap sm:flex-row'>
+				<motion.div
+					variants={listWordAffect}
+					initial="hidden"
+					animate="visible"
+					className="flex justify-between items-center flex-col sm:flex-wrap sm:flex-row"
+				>
 					{fakeData.map((x) => (
-						<article key={x} className="border-t-[2px] border-primary-100 w-full h-[220px] bg-background-50 p-6 text-gray-200 shadow-box mb-8 sm:w-[48%] xl:w-[32%] sm:h-[250px] xl:h-[280px]">
+						<motion.article
+							variants={work}
+							key={x}
+							className="border-t-[2px] border-primary-100 w-full h-[220px] bg-background-50 p-6 text-gray-200 shadow-box mb-8 sm:w-[48%] xl:w-[32%] sm:h-[250px] xl:h-[280px]"
+						>
 							<div className="">
-								<p className='text-base uppercase text-primary-100 tracking-[3px]'>Web Developer</p>
+								<p className="text-base uppercase text-primary-100 tracking-[3px]">Web Developer</p>
 								<div>
 									<h5>
-										<a className='text-[26px] text-white-500 block my-4 mx-0 hover:text-primary-100' href="/">E-commerce website</a>
+										<a className="text-[26px] text-white-500 block my-4 mx-0 hover:text-primary-100" href="/">
+											E-commerce website
+										</a>
 									</h5>
 								</div>
-								<div className='text-ellipsis line-clamp-3'>
+								<div className="text-ellipsis line-clamp-3">
 									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
 									industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
 									scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
@@ -78,9 +117,9 @@ const Work = () => {
 									software like Aldus PageMaker including versions of Lorem Ipsum.
 								</div>
 							</div>
-						</article>
+						</motion.article>
 					))}
-				</div>
+				</motion.div>
 			</div>
 			<p className="font-aurore tracking-[3px] w-[100px] text-gray-100 text-1xl relative left-3 sm:left-8 overflow-hidden">{`</section>`}</p>
 		</>

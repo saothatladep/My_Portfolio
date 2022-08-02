@@ -14,8 +14,8 @@ const Skills = () => {
 			canvas.height = 350;
 			canvas.width = 350;
 		} else if (width > XXL) {
-			canvas.height = 600;
-			canvas.width = 600;
+			canvas.height = 700;
+			canvas.width = 700;
 		} else {
 			canvas.height = 500;
 			canvas.width = 500;
@@ -23,7 +23,7 @@ const Skills = () => {
 	}, [width]);
 
 	return (
-		<section className="min-h-[100vh] flex items-center px-6 relative">
+		<section className="min-h-[89vh] flex items-center px-6 relative">
 			<div className="flex justify-between items-center flex-col lg:flex-row">
 				<div className="w-full lg:w-[50%]">
 					<div className="px-4 sm:px-8 xl:pl-12">

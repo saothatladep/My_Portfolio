@@ -1,9 +1,12 @@
-import React from 'react'
+import MainLayout from 'components/MainLayout';
+import Work from './components/Work';
 
 const Index = () => {
-  return (
-    <div>Index</div>
-  )
-}
+	return (
+		<MainLayout>
+			<Work />
+		</MainLayout>
+	);
+};
 
-export default Index
+export default Index;

@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
-import Logo from 'assets/icon/logo';
 import { menuNavbar, socialIcon } from 'utils/constant';
 import { useLocation } from 'react-router-dom';
-
 
 const Sidebar = ({ toggleTab, setToggleTab }) => {
 	const location = useLocation().pathname;
@@ -15,10 +13,13 @@ const Sidebar = ({ toggleTab, setToggleTab }) => {
 			style={{ zIndex: 1 }}
 		>
 			<div className="h-[100vh] flex justify-between items-center flex-col bg-gray-400">
-				<div className="min-h-[30vh] w-full flex justify-center items-center flex-col bg-gray-900 xl:min-h-[26vh]">
+				<div className="min-h-[30vh] w-full flex justify-center items-center flex-col bg-gray-900 xl:min-h-[30vh]">
 					<a href="/" className="flex justify-center items-center flex-col">
-						<Logo />
-						<p className="text-2xl font-bold mt-1">Toan</p>
+						<p className="flex relative text-[132px] font-bold mr-3 leading-[132px]">
+							<div className="text-primary-100 ">T</div>
+							<div className="text-primary-50 absolute left-3 top-0">T</div>
+						</p>
+						<p className="text-[22px] font-bold mt-1">@TonTon</p>
 					</a>
 					<p className="text-gray-100 text-sl mt-2">Web Developer</p>
 				</div>
@@ -45,7 +46,12 @@ const Sidebar = ({ toggleTab, setToggleTab }) => {
 				<ul className="flex items-center justify-center gap-4 pb-4">
 					{socialIcon.map((y) => (
 						<li key={y.id}>
-							<a href={y.url} className="text-gray-100 cursor-pointer hover:text-primary-100 text-1.5xl ">
+							<a
+								href={y.url}
+								target="_blank"
+								className="text-gray-100 cursor-pointer hover:text-primary-100 text-1.5xl "
+								rel="noreferrer"
+							>
 								{y.icon}
 							</a>
 						</li>

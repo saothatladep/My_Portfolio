@@ -70,9 +70,19 @@ module.exports = {
 					'0%': { transform: 'translateX(-10px)' },
 					'100%': { transform: 'translateX(4px)' },
 				},
+				scrollTo: {
+					'0%': { transform: 'translateY(-2px)' },
+					'100%': { transform: 'translateY(2px)' },
+				},
+				logo: {
+					'0%': { transform: 'rotate(25deg)' },
+					'100%': { transform: 'rotate(45deg)' },
+				},
 			},
 			animation: {
 				scroll: 'scroll 0.5s linear infinite alternate-reverse',
+				scrollTo: 'scrollTo 0.6s linear infinite alternate-reverse',
+				logo: 'logo 0.6s linear infinite alternate-reverse',
 			},
 		},
 	},

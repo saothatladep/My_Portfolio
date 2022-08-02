@@ -66,7 +66,7 @@ const Work = () => {
 							companies around the globe. It's only a drop in the ocean compared to the entire list.
 							<br />
 							Interested to see some more? Visit{' '}
-							<a className="text-primary-100" href="/work">
+							<a className="text-primary-100" href="/">
 								my work
 							</a>{' '}
 							page
@@ -74,7 +74,7 @@ const Work = () => {
 						<p className="font-aurore tracking-[3px] text-gray-100 text-1xl relative left-[-18px]">{`<p>`}</p>
 					</div>
 					<div className="w-[50%] flex my-4 ml-4 xl:m-0 xl:justify-end xl:items-end">
-						<Button text="See more!" url="/work" />
+						<Button text="See more!" />
 					</div>
 				</div>
 				<div

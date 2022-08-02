@@ -4,6 +4,7 @@ import Sidebar from 'components/Sidebar';
 import { FaArrowUp } from 'react-icons/fa';
 import { listWordAffect, spanVariants, wordAffect } from 'utils/constant';
 import { motion } from 'framer-motion';
+import MouseParticles from 'react-mouse-particles';
 
 const up = {
 	visible: {
@@ -13,7 +14,7 @@ const up = {
 	},
 	hidden: {
 		opacity: 0,
-		y: 100,
+		y: -100,
 	},
 };
 
@@ -43,6 +44,16 @@ const MainLayout = ({ children }) => {
 
 	return (
 		<div>
+			<MouseParticles
+				g={1}
+				num={10}
+				color={['#FD1056', '#08fdd8']}
+				v={1}
+				cull="col,image-wrapper"
+				// level={8}
+				// alpha={0.8}
+				radius={3}
+			/>
 			<Header toggleTab={toggleTab} setToggleTab={setToggleTab} />
 			<Sidebar toggleTab={toggleTab} setToggleTab={setToggleTab} />
 			<div className="m-0 xl:ml-[120px]">
@@ -67,7 +78,7 @@ const MainLayout = ({ children }) => {
 				>
 					<motion.i
 						variants={up}
-						className="flex justify-center mt-2 text-primary-100 text-2xl group-hover:text-background-50"
+						className="flex justify-center mt-2 text-primary-100 text-2xl group-hover:text-background-50 animate-scrollTo"
 					>
 						<FaArrowUp />
 					</motion.i>

@@ -15,8 +15,8 @@ const Skills = () => {
 			canvas.height = 350;
 			canvas.width = 350;
 		} else if (width > XXL) {
-			canvas.height = 600;
-			canvas.width = 600;
+			canvas.height = 700;
+			canvas.width = 700;
 		} else {
 			canvas.height = 500;
 			canvas.width = 500;

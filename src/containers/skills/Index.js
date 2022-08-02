@@ -1,9 +1,12 @@
-import React from 'react'
+import MainLayout from 'components/MainLayout';
+import Skills from './components/Skills';
 
 const Index = () => {
-  return (
-    <div>Index</div>
-  )
-}
+	return (
+		<MainLayout>
+			<Skills />
+		</MainLayout>
+	);
+};
 
-export default Index
+export default Index;

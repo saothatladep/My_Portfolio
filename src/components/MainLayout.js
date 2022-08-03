@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
 import Header from 'components/Header';
 import Sidebar from 'components/Sidebar';
-import { FaArrowUp } from 'react-icons/fa';
-import { listWordAffect, spanVariants, wordAffect } from 'utils/constant';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { FaArrowUp } from 'react-icons/fa';
 import MouseParticles from 'react-mouse-particles';
+import { listWordAffect } from 'utils/constant';
 
 const up = {
 	visible: {

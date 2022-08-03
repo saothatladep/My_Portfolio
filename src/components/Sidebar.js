@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
-import { menuNavbar, socialIcon } from 'utils/constant';
 import { useLocation } from 'react-router-dom';
+import { menuNavbar, socialIcon } from 'utils/constant';
 
 const Sidebar = ({ toggleTab, setToggleTab }) => {
 	const location = useLocation().pathname;

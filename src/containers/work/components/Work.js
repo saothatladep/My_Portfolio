@@ -6,21 +6,21 @@ const h1Word = 'My Portfolio';
 
 const fakeData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
-const workContainer = {
-	visible: {
-		opacity: 1,
-		transition: {
-			when: 'beforeChildren',
-			staggerChildren: 0.1,
-		},
-	},
-	hidden: {
-		opacity: 0,
-		transition: {
-			when: 'afterChildren',
-		},
-	},
-};
+// const workContainer = {
+// 	visible: {
+// 		opacity: 1,
+// 		transition: {
+// 			when: 'beforeChildren',
+// 			staggerChildren: 0.1,
+// 		},
+// 	},
+// 	hidden: {
+// 		opacity: 0,
+// 		transition: {
+// 			when: 'afterChildren',
+// 		},
+// 	},
+// };
 
 const Work = () => {
 	return (

@@ -17,6 +17,7 @@
 		"react-mouse-particles": "^1.1.5",
 		"react-router-dom": "6",
 		"react-scripts": "5.0.1",
+		"react-tagcloud": "^2.2.0",
 		"react-tsparticles": "^2.1.4",
 		"tsparticles": "^2.1.4",
 		"web-vitals": "^2.1.4",

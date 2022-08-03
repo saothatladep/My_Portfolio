@@ -33,3 +33,7 @@ input:focus + span::after,
 textarea:focus + span::after {
 	width: 100%;
 }
+
+.tag-cloud-tag {
+	margin: 0 8px !important;
+}

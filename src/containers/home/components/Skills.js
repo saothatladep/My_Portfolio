@@ -50,11 +50,12 @@ const Skills = () => {
 					<div className="px-4 sm:px-8 xl:pl-12">
 						<p className="font-aurore tracking-[3px] text-gray-100 text-1xl relative left-[-18px]">{`<p>`}</p>
 						<p>
-							Since Adobe Flash was a complete innovation, alongside with CSS 1.0 and HTML 4.01 as standards of the
-							current web I've been passionate about web.
+							I started out as a data analysis programmer, after six months of working I found a new direction for
+							myself which is web programming, I spent about four months learning and developing programming skills and
+							love it till now
 						</p>
 						<p className="my-4">
-							For over a decade I had many opportunities to work in a vast spectrum of{' '}
+							For almost two years I had many opportunities to work in a vast spectrum of{' '}
 							<a className="text-primary-100" href="/">
 								web technologies
 							</a>{' '}
@@ -81,7 +82,7 @@ const Skills = () => {
 						<ul>
 							{tags.map((x) => (
 								<li key={x}>
-									<a className='pointer-events-none cursor-default' onClick={(e) => e.preventDefault()}>
+									<a className="pointer-events-none cursor-default" onClick={(e) => e.preventDefault()}>
 										{x}
 									</a>
 								</li>

@@ -62,8 +62,8 @@ const Work = () => {
 					<div className="px-4 sm:px-8 xl:pl-12 w-full xl:w-[50%]">
 						<p className="font-aurore tracking-[3px] text-gray-100 text-1xl relative left-[-18px]">{`<p>`}</p>
 						<p className="leading-6">
-							A small gallery of recent projects chosen by me. I've done them all together with amazing people from
-							companies around the globe. It's only a drop in the ocean compared to the entire list.
+							A small gallery of recent projects chosen by me. I've done them all by myself to improve my programming
+							skills and also learn many new technologies. It's only a drop in the ocean compared to the entire list.
 							<br />
 							Interested to see some more? Visit{' '}
 							<a className="text-primary-100" href="/work">

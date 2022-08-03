@@ -97,7 +97,7 @@ const Contact = () => {
 					<div className="px-4 sm:px-8 xl:pl-12">
 						<p className="font-aurore tracking-[3px] text-gray-100 text-1xl relative left-[-18px]">{`<p>`}</p>
 						<p>
-							I’m interested in freelance opportunities – especially ambitious or large projects. However, if you have
+							I’m interested in job opportunities – especially ambitious or large projects. However, if you have
 							other request or question, don’t hesitate to use the form.
 						</p>
 

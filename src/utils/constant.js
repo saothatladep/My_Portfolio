@@ -38,7 +38,7 @@ export const socialIcon = [
 	{
 		id: 1,
 		icon: <FaLinkedinIn />,
-		url: 'https://www.linkedin.com/in/toan-pham-3ba8b7207/',
+		url: 'https://www.linkedin.com/in/toanpham1903/',
 	},
 	{
 		id: 2,
@@ -53,8 +53,8 @@ export const socialIcon = [
 ];
 
 export const tags = [
-	'ReactJs',
-	'NodeJs',
+	'ReactJS',
+	'NodeJS',
 	'Express',
 	'Javascript',
 	'C#',
@@ -62,7 +62,7 @@ export const tags = [
 	'NextJs',
 	'SQL',
 	'Antd',
-	'Tailwindcss',
+	'TailwindCSS',
 	'Restfull API',
 	'Git',
 	'HTML',
@@ -302,3 +302,31 @@ export const optionParticle = {
 	},
 	detectRetina: true,
 };
+export const work = {
+	visible: {
+		opacity: 1,
+		y: 0,
+		scaleY: [1, 1.3, 0.8, 1],
+	},
+	hidden: {
+		opacity: 0,
+		y: 100,
+	},
+};
+export const experiences = [
+	{
+		role: 'data analyze',
+		company: 'Bizwork',
+		time: '15/06/2020 - 01/12/2020',
+		description:
+			'Design data models for projects s company, develop procedures and scripts for data migration, develop and implement and optimize stored procedures and functions using T-SQL.',
+	},
+
+	{
+		role: 'web developer',
+		company: 'Aegona',
+		time: '01/05/2021 - 14/07/2022',
+		description:
+			'Participate in the process of analyzing and designing websites including tasks related to designing and creating APIs (Back-end), creating user interfaces or dashboard page (Front-end).',
+	},
+];

@@ -1,6 +1,6 @@
 import Button from 'components/Button';
 import { motion } from 'framer-motion';
-import { listWordAffect, spanVariants, wordAffect } from 'utils/constant';
+import { listWordAffect, spanVariants, wordAffect, work } from 'utils/constant';
 
 const h1Word = 'My Portfolio';
 
@@ -19,18 +19,6 @@ const workContainer = {
 		transition: {
 			when: 'afterChildren',
 		},
-	},
-};
-
-const work = {
-	visible: {
-		opacity: 1,
-		y: 0,
-		scaleY: [1, 1.3, 0.8, 1],
-	},
-	hidden: {
-		opacity: 0,
-		y: 100,
 	},
 };
 
@@ -62,11 +50,11 @@ const Work = () => {
 					<div className="px-4 sm:px-8 xl:pl-12 w-full xl:w-[50%]">
 						<p className="font-aurore tracking-[3px] text-gray-100 text-1xl relative left-[-18px]">{`<p>`}</p>
 						<p className="leading-6">
-							A small gallery of recent projects chosen by me. I've done them all together with amazing people from
-							companies around the globe. It's only a drop in the ocean compared to the entire list.
+							A small gallery of recent projects chosen by me. I've done them all by myself to improve my programming
+							skills and also learn many new technologies. It's only a drop in the ocean compared to the entire list.
 							<br />
 							Interested to see some more? Visit{' '}
-							<a className="text-primary-100" href="/">
+							<a className="text-primary-100" href="/work">
 								my work
 							</a>{' '}
 							page

@@ -318,7 +318,7 @@ export const work = {
 export const experiences = [
 	{
 		role: 'data analyst',
-		company: 'Bizwork',
+		company: 'Biz4',
 		time: '15/06/2020 - 01/12/2020',
 		description:
 			'Design data models for projects s company, develop procedures and scripts for data migration, develop and implement and optimize stored procedures and functions using T-SQL.',

@@ -1,10 +1,8 @@
 import Button from 'components/Button';
 import { motion } from 'framer-motion';
-import { listWordAffect, spanVariants, wordAffect } from 'utils/constant';
+import { listWordAffect, spanVariants, wordAffect, works } from 'utils/constant';
 
 const h1Word = 'My Portfolio';
-
-const fakeData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 // const workContainer = {
 // 	visible: {
@@ -93,28 +91,32 @@ const Work = () => {
 					animate="visible"
 					className="flex justify-between items-center flex-col sm:flex-wrap sm:flex-row"
 				>
-					{fakeData.map((x) => (
+					{works.map((x) => (
 						<motion.article
 							variants={work}
-							key={x}
-							className="border-t-[2px] border-primary-100 w-full h-[220px] bg-background-50 p-6 text-gray-200 shadow-box mb-8 sm:w-[48%] xl:w-[32%] sm:h-[250px] xl:h-[280px]"
+							key={x.id}
+							className="border-t-[2px] border-primary-100 w-full h-[260px] bg-background-50 p-6 text-gray-200 shadow-box mb-8 sm:w-[48%] xl:w-[32%] sm:h-[300px] xl:h-[280px]"
 						>
-							<div className="">
-								<p className="text-base uppercase text-primary-100 tracking-[3px]">Web Developer</p>
-								<div>
-									<h5>
-										<a className="text-[26px] text-white-500 block my-4 mx-0 hover:text-primary-100" href="/">
-											E-commerce website
-										</a>
-									</h5>
+							<div className="flex flex-col justify-between h-full">
+								<div className="">
+									<p className="text-base uppercase text-primary-100 tracking-[3px]">Web Developer</p>
+									<div>
+										<h5>
+											<a className="text-[26px] text-white-500 block my-4 mx-0 hover:text-primary-100" href="/">
+												{x.title}
+											</a>
+										</h5>
+									</div>
+									<div className="text-ellipsis line-clamp-3">
+										<p className="font-bold text-white-500">
+											Tech: <span className="text-gray-200 font-normal">{x.tech.join(', ')}</span>
+										</p>
+									</div>
 								</div>
-								<div className="text-ellipsis line-clamp-3">
-									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-									industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-									scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-									into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-									release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-									software like Aldus PageMaker including versions of Lorem Ipsum.
+
+								<div className="flex gap-8">
+									<Button newTab={true} text="Source" url={x.linkSource} />
+									<Button newTab={true} text="Demo" url={x.linkDemo} />
 								</div>
 							</div>
 						</motion.article>

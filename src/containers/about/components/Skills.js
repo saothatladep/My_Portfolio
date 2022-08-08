@@ -60,7 +60,7 @@ const Skills = () => {
 							what let me gather a significant amount of various experience. Working for companies and individuals
 							around the globe I met and learnt from amazing and ambitious people.
 						</p>
-						<p>I currently work remotely with a selected freelance client base being open for new opportunities.</p>
+						{/* <p>I currently work remotely with a selected freelance client base being open for new opportunities.</p> */}
 						<p className="font-aurore tracking-[3px] text-gray-100 text-1xl relative left-[-18px]">{`<p>`}</p>
 					</div>
 					<div

@@ -55,11 +55,13 @@ export const socialIcon = [
 export const tags = [
 	'ReactJS',
 	'NodeJS',
+	'VueJS',
 	'Express',
 	'Javascript',
+	'Typescript',
 	'C#',
 	'Entity Framework',
-	'NextJs',
+	'NextJS',
 	'SQL',
 	'Antd',
 	'TailwindCSS',
@@ -67,7 +69,7 @@ export const tags = [
 	'Git',
 	'HTML',
 	'CSS',
-	'Sass',
+	'SASS',
 	'Highcharts',
 	'ES6',
 	'Redux',
@@ -315,7 +317,7 @@ export const work = {
 };
 export const experiences = [
 	{
-		role: 'data analyze',
+		role: 'data analyst',
 		company: 'Bizwork',
 		time: '15/06/2020 - 01/12/2020',
 		description:
@@ -328,5 +330,56 @@ export const experiences = [
 		time: '01/05/2021 - 14/07/2022',
 		description:
 			'Participate in the process of analyzing and designing websites including tasks related to designing and creating APIs (Back-end), creating user interfaces or dashboard page (Front-end).',
+	},
+];
+
+export const works = [
+	{
+		id: 1,
+		title: "TonTon's Furniture Shop",
+		tech: ['MongoDB', 'NodeJS', 'Express', 'ReactJS', 'Redux', 'Material UI'],
+		description: '',
+		linkDemo: 'https://furnituretonton.web.app',
+		linkSource: 'https://github.com/saothatladep/tontonshop',
+	},
+	{
+		id: 2,
+		title: "TonTon's Portfolio",
+		tech: ['ReactJS', 'TailwindCSS'],
+		description: '',
+		linkDemo: 'https://tontonportfolio.netlify.app',
+		linkSource: 'https://github.com/saothatladep/My_Portfolio',
+	},
+	{
+		id: 3,
+		title: "TonTon's Fortune Teller",
+		tech: ['HTML', 'CSS', 'JS'],
+		description: '',
+		linkDemo: 'https://tontonfortuneteller.netlify.app',
+		linkSource: 'https://github.com/saothatladep/fortune-teller',
+	},
+	{
+		id: 4,
+		title: "TonTon's Pokemon Flip Game",
+		tech: ['VueJS'],
+		description: '',
+		linkDemo: 'https://pokemonmemoriesgame.netlify.app',
+		linkSource: 'https://github.com/saothatladep/Pokemon-Memories-Game',
+	},
+	{
+		id: 5,
+		title: "TonTon's Pokemon List",
+		tech: ['ReactJS', 'Typescript'],
+		description: '',
+		linkDemo: 'https://pokettypescript.netlify.app',
+		linkSource: 'https://github.com/saothatladep/Pokemon-Typescript',
+	},
+	{
+		id: 6,
+		title: 'Admin Exam',
+		tech: ['ReactJS', 'Material UI', 'Redux'],
+		description: '',
+		linkDemo: 'https://adminonline.netlify.app',
+		linkSource: 'https://github.com/saothatladep/admin_hufi_exam',
 	},
 ];

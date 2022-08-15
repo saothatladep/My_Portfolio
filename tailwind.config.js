@@ -26,6 +26,7 @@ module.exports = {
 		boxShadow: {
 			input: '0 0 0px 1000px #2b2b2b inset',
 			box: 'rgba(253, 16, 86, 0.4) -5px 5px, rgba(253, 16, 86, 0.3) -10px 10px, rgba(253, 16, 86, 0.2) -15px 15px',
+			cv: '0 0 10px #08fdd8, 0 0 30px #08fdd8, 0 0 60px #08fdd8, 0 0 100px #08fdd8',
 		},
 		extend: {
 			colors: {
@@ -78,11 +79,37 @@ module.exports = {
 					'0%': { transform: 'rotate(25deg)' },
 					'100%': { transform: 'rotate(45deg)' },
 				},
+				cv: {
+					'0%': {
+						color: '#fff',
+						filter: 'blur(0px) hue-rotate(0deg)',
+						textShadow:
+							'0 0 10px #08fdd8, 0 0 20px #08fdd8, 0 0 40px #08fdd8, 0 0 80px #08fdd8',
+					},
+					'30%': {
+						color: '#fff',
+						filter: 'blur(0px) hue-rotate(0deg)',
+						textShadow:
+							'0 0 10px #08fdd8, 0 0 20px #08fdd8, 0 0 40px #08fdd8, 0 0 80px #08fdd8',
+					},
+					'70%': {
+						color: '#fff',
+						filter: 'blur(0px) hue-rotate(0deg)',
+						textShadow:
+							'0 0 10px #08fdd8, 0 0 20px #08fdd8, 0 0 40px #08fdd8, 0 0 80px #08fdd8',
+					},
+					'100%': {
+						color: 'transparent',
+						boxShadow: 'none',
+						filter: 'blur(0px) hue-rotate(0deg)',
+					},
+				},
 			},
 			animation: {
 				scroll: 'scroll 0.5s linear infinite alternate-reverse',
 				scrollTo: 'scrollTo 0.6s linear infinite alternate-reverse',
 				logo: 'logo 0.6s linear infinite alternate-reverse',
+				cv: 'cv 2.5s linear infinite',
 			},
 		},
 	},

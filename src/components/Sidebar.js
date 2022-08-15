@@ -1,6 +1,5 @@
 import { useLocation } from 'react-router-dom';
 import { menuNavbar, socialIcon } from 'utils/constant';
-
 const Sidebar = ({ toggleTab, setToggleTab }) => {
 	const location = useLocation().pathname;
 
@@ -41,6 +40,13 @@ const Sidebar = ({ toggleTab, setToggleTab }) => {
 						</div>
 					))}
 				</nav>
+
+				<a href="/CV_ToanPham.pdf" className="font-aurore text-2xl flex" download target="_blank">
+					<span className="animate-cv delay-100">M</span>
+					<span className="animate-cv delay-200 mr-2">y</span>
+					<span className="animate-cv delay-300">C</span>
+					<span className="animate-cv delay-300">V</span>
+				</a>
 
 				<ul className="flex items-center justify-center gap-4 pb-4">
 					{socialIcon.map((y) => (

@@ -83,20 +83,22 @@ module.exports = {
 					'0%': {
 						color: '#fff',
 						filter: 'blur(0px) hue-rotate(0deg)',
-						textShadow:
-							'0 0 10px #08fdd8, 0 0 20px #08fdd8, 0 0 40px #08fdd8, 0 0 80px #08fdd8',
+						textShadow: '0 0 10px #08fdd8, 0 0 20px #08fdd8, 0 0 40px #08fdd8, 0 0 80px #08fdd8',
 					},
-					'30%': {
+					'20%': {
 						color: '#fff',
 						filter: 'blur(0px) hue-rotate(0deg)',
-						textShadow:
-							'0 0 10px #08fdd8, 0 0 20px #08fdd8, 0 0 40px #08fdd8, 0 0 80px #08fdd8',
+						textShadow: '0 0 10px #FD1056, 0 0 20px #FD1056, 0 0 40px #FD1056, 0 0 80px #FD1056',
 					},
-					'70%': {
+					'60%': {
 						color: '#fff',
 						filter: 'blur(0px) hue-rotate(0deg)',
-						textShadow:
-							'0 0 10px #08fdd8, 0 0 20px #08fdd8, 0 0 40px #08fdd8, 0 0 80px #08fdd8',
+						textShadow: '0 0 10px #08fdd8, 0 0 20px #08fdd8, 0 0 40px #08fdd8, 0 0 80px #08fdd8',
+					},
+					'80%': {
+						color: '#fff',
+						filter: 'blur(0px) hue-rotate(0deg)',
+						textShadow: '0 0 10px #FD1056, 0 0 20px #FD1056, 0 0 40px #FD1056, 0 0 80px #FD1056',
 					},
 					'100%': {
 						color: 'transparent',

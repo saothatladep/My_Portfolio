@@ -126,7 +126,7 @@ const Skills = () => {
 						variants={listWordAffect}
 						initial="hidden"
 						animate="visible"
-						className="w-full mt-8 flex justify-between flex-col md:flex-row"
+						className="w-full mt-8 flex justify-between flex-col md:flex-row flex-wrap"
 					>
 						{experiences.map((x) => (
 							<motion.article

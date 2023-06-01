@@ -319,7 +319,7 @@ export const experiences = [
 	{
 		role: 'data analyst',
 		company: 'Biz4',
-		time: '15/06/2020 - 01/12/2020',
+		time: '06/2020 - 03/2021',
 		description:
 			'Design data models for projects s company, develop procedures and scripts for data migration, develop and implement and optimize stored procedures and functions using T-SQL.',
 	},
@@ -327,9 +327,17 @@ export const experiences = [
 	{
 		role: 'web developer',
 		company: 'Aegona',
-		time: '01/05/2021 - 14/07/2022',
+		time: '05/2021 - 07/2022',
 		description:
 			'Participate in the process of analyzing and designing websites including tasks related to designing and creating APIs (Back-end), creating user interfaces or dashboard page (Front-end).',
+	},
+
+	{
+		role: 'web developer',
+		company: 'Rikkeisoft',
+		time: '07/2022 - Now',
+		description:
+		'Participate in the process of analyzing, designing websites and creating user interfaces or dashboard page for Japanese clients (Front-end).',
 	},
 ];
 

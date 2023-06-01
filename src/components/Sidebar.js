@@ -41,7 +41,7 @@ const Sidebar = ({ toggleTab, setToggleTab }) => {
 					))}
 				</nav>
 
-				<a href="/CV_ToanPham.pdf" className="font-aurore text-2xl flex" download target="_blank">
+				<a href="/CV_Pham-Van-Toan.pdf" className="font-aurore text-2xl flex" download target="_blank">
 					<span className="animate-cv delay-100">M</span>
 					<span className="animate-cv delay-200 mr-2">y</span>
 					<span className="animate-cv delay-300">C</span>
